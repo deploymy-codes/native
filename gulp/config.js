@@ -15,7 +15,7 @@ module.exports = {
       transform: ['reactify', '6to5ify']
     },
     src: src + '/js/index.jsx',
-    dest: dest + '/js',
+    dest: dest + 'js',
     outputName: 'index.js',
   },
   through: {

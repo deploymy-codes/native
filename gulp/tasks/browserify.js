@@ -1,6 +1,5 @@
 var gulp = require( 'gulp' );
 var gutil = require('gulp-util');
-var connect = require('gulp-connect');
 var browserify = require('browserify');
 var reactify = require('reactify');
 var source = require('vinyl-source-stream');
@@ -22,5 +21,4 @@ function bundle() {
   .on('error', gutil.log.bind(gutil, 'Browserify Error'))
   .pipe(source(config.outputName))
   .pipe(gulp.dest(config.dest))
-  .pipe(connect.reload());
 }
