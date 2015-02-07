@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "Deploy all you codes without pain",
   "main": "index.html",
+  "engines": {
+    "node": "0.10.x"
+  },
   "scripts": {
-    "run": "gulp"
+    "build": "gulp"
   },
   "window": {
     "icon": "app/images/icon.png",
@@ -26,18 +29,24 @@
   },
   "homepage": "https://deploymy.codes",
   "dependencies": {
-    "lodash": "^3.0.0",
     "react": "^0.12.2",
-    "react-tap-event-plugin": "^0.1.3"
+    "flux": "^2.0.1",
+    "material-ui": "^0.6.1",
+    "material-ui-sass": "^0.5.2",
+    "object-assign": "^2.0.0"
   },
   "devDependencies": {
+    "6to5ify": "^4.1.0",
     "browserify": "^8.1.1",
     "gulp": "^3.8.10",
-    "gulp-less": "^2.0.1",
-    "gulp-concat": "^2.4.3",
+    "gulp-sass": "^1.3.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-util": "^3.0.3",
     "node-webkit-builder": "^1.0.7",
     "reactify": "^1.0.0",
     "require-dir": "^0.1.0",
-    "vinyl-source-stream": "^1.0.0"
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.3.0"
   }
 }

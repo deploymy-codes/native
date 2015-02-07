@@ -1,9 +1,9 @@
 var gulp = require( 'gulp' );
 var NwBuilder = require( 'node-webkit-builder' );
 
-gulp.task( 'build', [ 'compile' ], function () {
+gulp.task('compile', function () {
   var nw = new NwBuilder( {
-    files: './compile/**/*',
+    files: './dist/**/*',
     platforms: [ 'osx64' ],
     version: ( process.env.NODE_ENV === 'production' ) ? 'latest' : 'v0.10.5'
   } );

@@ -1,6 +1,5 @@
 node_modules/
-build/
-compile/
-cache/
-tmp/
 .DS_Store
+dist/
+cache/
+build/

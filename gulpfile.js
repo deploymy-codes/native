@@ -1,6 +1,3 @@
-var gulp = require( 'gulp' );
-var requireDir = require( 'require-dir' );
+var requireDir = require('require-dir');
 
-requireDir( './gulp' );
-
-gulp.task( 'default', [ 'build' ] );
+requireDir('./gulp/tasks', { recurse: true });
