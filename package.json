@@ -10,7 +10,7 @@
     "build": "gulp"
   },
   "window": {
-    "icon": "app/images/icon.png",
+    "icon": "images/icon.png",
     "toolbar": true,
     "frame": true,
     "width": 800,
